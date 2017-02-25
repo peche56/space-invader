@@ -2,7 +2,7 @@
 
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8" />
     <title>atelier bootstrap</title>
     <script src="js/jquery-1.11.3.js"></script>
@@ -13,19 +13,19 @@
 
 
 
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 
 
 
 
-  </head>
+</head>
 
-  <body>
+<body>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,9 +50,9 @@
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Enfants</a>
-                        </li>
-                   <li class="page-scroll">
-<button type="button" class="btn btn-default navbar-btn">Panier</button>
+                    </li>
+                    <li class="page-scroll">
+                        <button type="button" class="btn btn-default navbar-btn">Panier</button>
 
                     </li>
                 </ul>
@@ -63,74 +63,90 @@
     </nav>
     <!-- <div class="container"> -->
 
-  </div>
+    </div>
 
 
-              <script src="js/jssor.slider-22.2.8.min.js" type="text/javascript"></script>
-              <script type="text/javascript">
-                  jssor_1_slider_init = function() {
+    <script src="js/jssor.slider-22.2.8.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
 
-                      var jssor_1_options = {
-                        $AutoPlay: true,
-                        $SlideDuration: 800,
-                        $SlideEasing: $Jease$.$OutQuint,
-                        $ArrowNavigatorOptions: {
-                          $Class: $JssorArrowNavigator$
-                        },
-                        $BulletNavigatorOptions: {
-                          $Class: $JssorBulletNavigator$
-                        }
-                      };
+            var jssor_1_options = {
+                $AutoPlay: true,
+                $SlideDuration: 800,
+                $SlideEasing: $Jease$.$OutQuint,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
 
-                      var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-                      /*responsive code begin*/
-                      /*you can remove responsive code if you don't want the slider scales while window resizing*/
-                      function ScaleSlider() {
-                          var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                          if (refSize) {
-                              refSize = Math.min(refSize, 1920);
-                              jssor_1_slider.$ScaleWidth(refSize);
-                          }
-                          else {
-                              window.setTimeout(ScaleSlider, 30);
-                          }
-                      }
-                      ScaleSlider();
-                      $Jssor$.$AddEvent(window, "load", ScaleSlider);
-                      $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-                      $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-                      /*responsive code end*/
-                  };
-              </script>
-              <style>
-                  /* jssor slider bullet navigator skin 05 css */
-                  /*
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                } else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
                   .jssorb05 div           (normal)
                   .jssorb05 div:hover     (normal mouseover)
                   .jssorb05 .av           (active)
                   .jssorb05 .av:hover     (active mouseover)
                   .jssorb05 .dn           (mousedown)
                   */
-                  .jssorb05 {
-                      position: absolute;
-                  }
-                  .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-                      position: absolute;
-                      /* size of bullet elment */
-                      width: 16px;
-                      height: 16px;
-                      background: url('img/b05.png') no-repeat;
-                      overflow: hidden;
-                      cursor: pointer;
-                  }
-                  .jssorb05 div { background-position: -7px -7px; }
-                  .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
-                  .jssorb05 .av { background-position: -67px -7px; }
-                  .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
-                  /* jssor slider arrow navigator skin 22 css */
-                  /*
+        .jssorb05 {
+            position: absolute;
+        }
+
+        .jssorb05 div,
+        .jssorb05 div:hover,
+        .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .jssorb05 div {
+            background-position: -7px -7px;
+        }
+
+        .jssorb05 div:hover,
+        .jssorb05 .av:hover {
+            background-position: -37px -7px;
+        }
+
+        .jssorb05 .av {
+            background-position: -67px -7px;
+        }
+
+        .jssorb05 .dn,
+        .jssorb05 .dn:hover {
+            background-position: -97px -7px;
+        }
+        /* jssor slider arrow navigator skin 22 css */
+        /*
                   .jssora22l                  (normal)
                   .jssora22r                  (normal)
                   .jssora22l:hover            (normal mouseover)
@@ -140,55 +156,87 @@
                   .jssora22l.jssora22lds      (disabled)
                   .jssora22r.jssora22rds      (disabled)
                   */
-                  .jssora22l, .jssora22r {
-                      display: block;
-                      position: absolute;
-                      /* size of arrow element */
-                      width: 40px;
-                      height: 58px;
-                      cursor: pointer;
-                      background: url('img/a22.png') center center no-repeat;
-                      overflow: hidden;
-                  }
-                  .jssora22l { background-position: -10px -31px; }
-                  .jssora22r { background-position: -70px -31px; }
-                  .jssora22l:hover { background-position: -130px -31px; }
-                  .jssora22r:hover { background-position: -190px -31px; }
-                  .jssora22l.jssora22ldn { background-position: -250px -31px; }
-                  .jssora22r.jssora22rdn { background-position: -310px -31px; }
-                  .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
-                  .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
-              </style>
-              <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
-                  <!-- Loading Screen -->
-                  <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
-                      <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                      <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-                  </div>
-                  <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
-                      <div>
-                          <img data-u="image" src="img/red.jpg" />
-                          <div style="position:absolute;top:30px;left:30px;width:480px;height:120px;z-index:0;font-size:50px;color:#ffffff;line-height:60px;">TOUCH SWIPE SLIDER</div>
-                          <div style="position:absolute;top:300px;left:30px;width:480px;height:120px;z-index:0;font-size:30px;color:#ffffff;line-height:38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div>
-                      </div>
-                      <div>
-                          <img data-u="image" src="img/purple.jpg" />
-                      </div>
-                      <div>
-                          <img data-u="image" src="img/blue.jpg" />
-                      </div>
-                      <a data-u="any" href="http://www.jssor.com" style="display:none">Full Width Slider</a>
-                  </div>
-                  <!-- Bullet Navigator -->
-                  <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
-                      <!-- bullet navigator item prototype -->
-                      <div data-u="prototype" style="width:16px;height:16px;"></div>
-                  </div>
-                  <!-- Arrow Navigator -->
-                  <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
-                  <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
-              </div>
-              <script type="text/javascript">jssor_1_slider_init();</script>
+
+        .jssora22l,
+        .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+
+        .jssora22l {
+            background-position: -10px -31px;
+        }
+
+        .jssora22r {
+            background-position: -70px -31px;
+        }
+
+        .jssora22l:hover {
+            background-position: -130px -31px;
+        }
+
+        .jssora22r:hover {
+            background-position: -190px -31px;
+        }
+
+        .jssora22l.jssora22ldn {
+            background-position: -250px -31px;
+        }
+
+        .jssora22r.jssora22rdn {
+            background-position: -310px -31px;
+        }
+
+        .jssora22l.jssora22lds {
+            background-position: -10px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
+
+        .jssora22r.jssora22rds {
+            background-position: -70px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/red.jpg" />
+                <div style="position:absolute;top:30px;left:30px;width:480px;height:120px;z-index:0;font-size:50px;color:#ffffff;line-height:60px;">TOUCH SWIPE SLIDER</div>
+                <div style="position:absolute;top:300px;left:30px;width:480px;height:120px;z-index:0;font-size:30px;color:#ffffff;line-height:38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div>
+            </div>
+            <div>
+                <img data-u="image" src="img/purple.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/blue.jpg" />
+            </div>
+            <a data-u="any" href="http://www.jssor.com" style="display:none">Full Width Slider</a>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+    <script type="text/javascript">
+        jssor_1_slider_init();
+    </script>
 
 
 
@@ -196,67 +244,144 @@
 
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+              <h2>produit 1</h2>
+                <img class="img/c1.jpg" src="img/resized/bs1.jpg" alt="">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <div class="container">
-                <h2>Modal Example</h2>
                 <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Panier</button>
+                <button type="button"  data-toggle="modal" data-target="#myModal1">Panier</button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
-                  <div class="modal-dialog">
+            </div>
+            <div class="col-lg-3">
+              <h2>produit 2</h2>
+                <img class="img/c1.jpg" src="img/resized/bs2.jpg" alt="">
 
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Panier</button>
 
+            </div>
 
+            <div class="col-lg-3">
+              <h2>produit 3</h2>
+                <img class="img/c1.jpg" src="img/resized/bs3.jpg" alt="">  <!-- Trigger the modal with a button -->
+                  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Panier</button>
 
-
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">produit1</h4>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/c1.jpg" alt="Bloc-Notes" />
-                        <p>achetez nos merveilleuses chaussettes !</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-
-                  </div>
                 </div>
 
+                <div class="col-lg-3">
+                <h2>produit 4</h2>
+                    <img class="img/c1.jpg" src="img/resized/bs4.jpg" alt="">
+
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Panier</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">produit1</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/resized/bs1.jpg" alt="Bloc-Notes" />
+                    <p>achetez nos merveilleuses chaussettes !</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">produit1</h4>
               </div>
+              <div class="modal-body">
+                  <img src="img/resized/bs2.jpg" alt="Bloc-Notes" />
+                  <p>achetez nos merveilleuses chaussettes !</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
 
-              </body>
-              </html>
+      </div>
+  </div>
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">produit1</h4>
+            </div>
+            <div class="modal-body">
+                <img src="img/resized/bs2.jpg" alt="Bloc-Notes" />
+                <p>achetez nos merveilleuses chaussettes !</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">produit1</h4>
+            </div>
+            <div class="modal-body">
+                <img src="img/resized/bs2.jpg" alt="Bloc-Notes" />
+                <p>achetez nos merveilleuses chaussettes !</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
 
 
+    </div>
 
+</body>
 
-
-
-
+</html>
 
 
 
@@ -269,25 +394,26 @@
 
 <!-- -mise en place du modal fin- -->
 
+</div>
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="foot"> Copyright &copy; Clément Filleul 2017</p>
+                </div>
+            </div>
         </div>
-<footer>  <div class="footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                <p class="foot">  Copyright &copy; Clément Filleul 2017</p>
-              </div>
-          </div>
-      </div>
-  </div>
+    </div>
 
 </footer>
 
 
-  </div>
+</div>
 
 
 
 
-  </body>
+</body>
 
 </html>
